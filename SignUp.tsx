@@ -7,6 +7,7 @@ import {
   Text,
   View,
   StyleSheet,
+  Switch,
 } from "react-native";
 import { Formik } from "formik";
 import * as yup from "yup";
@@ -30,16 +31,40 @@ const validationSchema = yup.object({
     .test("passwords-match", "Passwords must match ", function (value) {
       return this.parent.password === value;
     }),
+  agreeToTerms: yup
+    .boolean()
+    .label("Terms")
+    .test(
+      "is-true",
+      "Must agree to terms to continue",
+      (value) => value === true
+    ),
 
   // createdOn: yup.date().default(function() {
   //   return new Date();
   // }),
 });
+const StyledSwitch = ({ formikKey, formikProps, label, ...rest }) => (
+  <View style={{ marginHorizontal: 20 }}>
+    <Text style={{ marginBottom: 3 }}>{label}</Text>
+    <Switch
+      style={{ marginRight: 330 }}
+      value={formikProps.values[formikKey]}
+      onValueChange={(value) => {
+        formikProps.setFieldValue(formikKey, value);
+      }}
+      {...rest}
+    />
+    <Text style={{ color: "red" }}>
+      {formikProps.touched[formikKey] && formikProps.errors[formikKey]}
+    </Text>
+  </View>
+);
 
 export default () => (
   <SafeAreaView style={styles.container}>
     <View>
-      <Text style={styles.appTitleLarge}>POSAH |Remittance</Text>
+      <Text style={styles.appTitleLarge}>POSAH | Remittance</Text>
     </View>
 
     <View>
@@ -52,13 +77,15 @@ export default () => (
         passwordConfirmation: "",
         firstName: "",
         lastName: "",
+        agreeToTerms: false,
       }}
       onSubmit={(values, actions) => {
         alert(JSON.stringify(values));
+
+        actions.resetForm();
         setTimeout(() => {
           actions.setSubmitting(false);
         }, 1000);
-        actions.resetForm();
       }}
       validationSchema={validationSchema}
     >
@@ -150,6 +177,12 @@ export default () => (
                 formikProps.errors.passwordConfirmation}
             </Text>
           </View>
+
+          <StyledSwitch
+            label="Agree to Terms"
+            formikKey="agreeToTerms"
+            formikProps={formikProps}
+          />
 
           {formikProps.isSubmitting ? (
             <ActivityIndicator />
