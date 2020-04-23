@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Button, Text, View } from "native-base";
-//import { Col, Row, Grid } from "react-native-easy-grid";
+////import { Col, Row, Grid } from "react-native-easy-grid";
 import { StyleSheet, TextInput, TouchableOpacity } from "react-native";
 
 class Inputs extends Component {
