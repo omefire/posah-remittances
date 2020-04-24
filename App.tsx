@@ -30,6 +30,8 @@ import {
 } from "react-native/Libraries/NewAppScreen";
 import WelcomeScreen from "./WelcomeScreen";
 import SignUp from "./SignUp";
+import SendConfirmationEmail from "./SendConfirmationEmail";
+import ResetPassword from "./ResetPassword";
 
 declare var global: { HermesInternal: null | {} };
 
@@ -40,7 +42,7 @@ const App = () => {
       onPress={Keyboard.dismiss}
     >
       <View style={styless.all}>
-        <SignUp />
+        <SendConfirmationEmail />
       </View>
     </TouchableWithoutFeedback>
   );
