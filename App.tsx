@@ -8,6 +8,14 @@
  * @format
  */
 
+import "react-native-gesture-handler";
+//import * as React from "react";
+//import { NavigationContainer } from "@react-navigation/native";
+import {
+  NavigationContainer,
+  DarkTheme,
+  useLinking,
+} from "@react-navigation/native";
 import React from "react";
 import {
   SafeAreaView,
@@ -18,6 +26,7 @@ import {
   StatusBar,
   Button,
   Keyboard,
+  Alert,
 } from "react-native";
 import { TouchableWithoutFeedback } from "react-native";
 
@@ -28,22 +37,179 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from "react-native/Libraries/NewAppScreen";
-import WelcomeScreen from "./WelcomeScreen";
-import SignUp from "./SignUp";
-import SendConfirmationEmail from "./SendConfirmationEmail";
-import ResetPassword from "./ResetPassword";
 
-declare var global: { HermesInternal: null | {} };
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import { createStackNavigator } from "@react-navigation/stack";
+// import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
+// import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import {
+  Appearance,
+  useColorScheme,
+  AppearanceProvider,
+} from "react-native-appearance";
+
+//
+
+const Drawer = createDrawerNavigator();
+const Stack = createStackNavigator();
+// const MaterialBottomTabs = createMaterialBottomTabNavigator();
+// const MaterialTopTabs = createMaterialTopTabNavigator();
+
+//
+
+import WelcomeScreen from "./src/screens/WelcomeScreen";
+import SignUp from "./src/screens/SignUp";
+import SendConfirmationEmail from "./src/screens/SendConfirmationEmail";
+import ResetPassword from "./src/screens/ResetPassword";
+
+import AppContainer from "./src/navigation";
+
+//declare var global: { HermesInternal: null | {} };
+
+//
 
 const App = () => {
-  return (
-    <TouchableWithoutFeedback
-      style={styles.scrollView}
-      onPress={Keyboard.dismiss}
+  ////
+  const state = {
+    routes: [
+      {
+        name: "Home",
+        state: {
+          routes: [
+            {
+              name: "WelcomeScreen",
+              params: { id: "jane" },
+            },
+          ],
+        },
+      },
+    ],
+  };
+
+  ////
+  const colorScheme = useColorScheme();
+  //
+  const MyTheme = {
+    dark: false,
+    colors: {
+      primary: "white",
+      background: "white",
+      card: "#65509f",
+      text: "white",
+      border: "green",
+    },
+  };
+
+  //
+
+  const createHomeStack = () => (
+    <Stack.Navigator
+      initialRouteName="WelcomeHome"
+      headerMode="screen"
+      screenOptions={{
+        headerTintColor: "white",
+        headerStyle: { backgroundColor: "blue" },
+      }}
     >
-      <View style={styless.all}>
-        <SendConfirmationEmail />
-      </View>
+      <Stack.Screen
+        name="Home"
+        children={createDrawer}
+        options={{
+          title: "               POSAH | REMITTANCES",
+        }}
+      />
+
+      <Stack.Screen
+        name="signup"
+        component={SignUp}
+        options={{
+          title: "signup Screen",
+        }}
+      />
+      {/* <Stack.Screen name="Bottom Tabs" children={this.createBottomTabs} />
+  <Stack.Screen name="Top Tabs" children={this.createTopTabs} /> */}
+    </Stack.Navigator>
+  );
+
+  const createDrawer = () => (
+    <Drawer.Navigator drawerStyle={{ backgroundColor: "blue" }}>
+      <Drawer.Screen name="welcome" component={WelcomeScreen} />
+      <Drawer.Screen name="signup" component={SignUp} />
+
+      <Drawer.Screen name="reset" component={ResetPassword} />
+      {/* <Drawer.Screen name="Contacts" component={Screen1} />
+  <Drawer.Screen name="Favorites" component={Screen2} />
+  <Drawer.Screen name="Settings" component={Screen3} /> */}
+    </Drawer.Navigator>
+  );
+  /// deep link
+  const ref = React.useRef();
+
+  const { getInitialState } = useLinking(ref, {
+    prefixes: ["https://mychat.com", "mychat://"],
+    config: {
+      Home: {
+        screens: {
+          welcome: "users/:id",
+        },
+      },
+    },
+  });
+
+  const [isReady, setIsReady] = React.useState(false);
+  const [initialState, setInitialState] = React.useState();
+
+  React.useEffect(() => {
+    Promise.race([
+      getInitialState(),
+      new Promise((resolve) =>
+        // Timeout in 150ms if `getInitialState` doesn't resolve
+        // Workaround for https://github.com/facebook/react-native/issues/25675
+        setTimeout(resolve, 150)
+      ),
+    ])
+      .catch((e) => {
+        console.error(e);
+      })
+      .then((state) => {
+        Alert.alert(JSON.stringify(state));
+        if (state !== undefined) {
+          ////setInitialState(state);
+        }
+
+        setIsReady(true);
+      });
+  }, [getInitialState]);
+
+  if (!isReady) {
+    return null;
+  }
+
+  ///
+
+  //
+  return (
+    // <NavigationContainer>
+    //   <TouchableWithoutFeedback
+    //     style={styles.scrollView}
+    //     onPress={Keyboard.dismiss}
+    //   >
+    //     <View style={styless.all}>
+    //       <AppContainer />
+    //     </View>
+    //   </TouchableWithoutFeedback>
+    // </NavigationContainer>
+    // <AppContainer/ >
+    <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+      <AppearanceProvider>
+        <NavigationContainer
+          theme={colorScheme == "dark" ? DarkTheme : MyTheme}
+          initialState={initialState}
+          ref={ref}
+        >
+          {createHomeStack()}
+        </NavigationContainer>
+      </AppearanceProvider>
     </TouchableWithoutFeedback>
   );
 };

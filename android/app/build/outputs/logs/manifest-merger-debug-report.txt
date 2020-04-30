@@ -1,16 +1,24 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-27:12
-INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-27:12
-INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-27:12
-INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-27:12
-MERGED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-27:12
+ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-35:12
+INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-35:12
+MERGED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-35:12
 MERGED from [com.facebook.flipper:flipper:0.33.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\508a8580daebab0a216a6c3b290cb83e\jetified-flipper-0.33.1\AndroidManifest.xml:8:1-18:12
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\7aaecf1ba100fc2b5c7bd873fc97ca8e\flipper-network-plugin-0.33.1\AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\3d2e5e760b7631955e5e3deac6cfac47\flipper-fresco-plugin-0.33.1\AndroidManifest.xml:8:1-15:12
+MERGED from [:react-native-community_masked-view] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-appearance] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-appearance\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-gesture-handler] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-safe-area-context] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.react:react-native:0.62.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\97788fffb7ffef8df69f2c55e7811bc8\jetified-react-native-0.62.1\AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\974022682544d6825d45fc692800328f\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\afc777f70584d440cacffbd98abbb7c0\swiperefreshlayout-1.1.0-alpha02\AndroidManifest.xml:17:1-24:12
 MERGED from [org.webkit:android-jsc:r245459] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\3b40a75f80595941c9d281e83930d2fb\android-jsc-r245459\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\1c82f948fbe49c677ead6ef920fb3084\material-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\680f99f5a60980a4fb7a012e32eff12d\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.fresco:flipper:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\237856cd59d663eef0d2dde410bdbc5b\flipper-2.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:stetho:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\f251691ba9209f420bb577eb9d91f704\stetho-2.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\e124fb4eb217419609eefd3669506cea\fresco-2.0.0\AndroidManifest.xml:2:1-9:12
@@ -21,26 +29,31 @@ MERGED from [com.facebook.fresco:imagepipeline:2.0.0] C:\Users\abdallah mefire\.
 MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\c162ff4907f328ad7d9561bd044b850e\nativeimagetranscoder-2.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\7d2a635a5ad58f78dca53ad99b0cecce\imagepipeline-base-2.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\35e22cd826274df1ea80004b3584bc82\soloader-0.8.2\AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\680f99f5a60980a4fb7a012e32eff12d\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\9f3d1a960b445437804b23cee56e2af7\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\140d1cf8081e8f704ec3cba757afa02b\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\0fa3398820e39b4e96b0722adbff64ea\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\e3f2b2737899525f005212ed63d1af29\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\8910766ad2d8870f961ea198929f0467\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\fcb85ee42de2afcd82ed2f0c66ca9c3e\fragment-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\b68ac1c6834c7293fa503cde61f3d185\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\47be07513a5bc77e813f0e807c366872\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\5fd1d1c4c0c205d485aea7bdb9f0c38d\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\62c0ec8f353403f8a78abf5ef29a4384\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\3bc3a76bc625d667ab1c7c423093d2c1\activity-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\6098b25f5dcba865e8ac7d5b02e0e623\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\c7051471f87a4f7960cfec345d8c5896\activity-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\18cfa758d0ddfb6bb1eb68cb563544aa\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\b686c239e656ccad1bce0dbfa1ccdb0e\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\a04beb4072abc0f79439acef2c7616da\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\6098b25f5dcba865e8ac7d5b02e0e623\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\db66a303bf26c4c9c9ee589a595c808c\core-1.1.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\ec2e9fa399b643ad2c02091627fa321c\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\d80c15330754c937ffd2195e28843ab7\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\78cd99b1b188d221044f5fbf54ba9ec2\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\242120d8bfd93333367333bf1d73ac36\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\8f17d7fa49fa95f7527732581685c3eb\lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\09f2dfbdbc6e9ffd5cb4c0b6e68943d7\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\ee14be87c7685c9b9745ba4d0c3bb979\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\09feddfd1746d178f13a0d989b25cbf6\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\1d0d8430a6c13d4b9abb12fe1f0c03ad\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\7d0f1e205b03b1a12b36f028fa8fd906\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\9c11bb5a5497cfd65ca5715586b6a836\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\62315b49a9cdb40c139c806a21028408\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\59fe9ff64b55925919001b6a4eabe497\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\a862f75b2afa492d35a589908f1d912d\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.soloader:annotation:0.8.2] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\011c9306f6d11474b3fd8d1f39103486\annotation-0.8.2\AndroidManifest.xml:2:1-13:12
 MERGED from [com.facebook.fresco:fbcore:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\63ec105cdd87e39db716b5324a2e1396\jetified-fbcore-2.0.0\AndroidManifest.xml:2:1-9:12
 INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\debug\AndroidManifest.xml:2:1-8:12
@@ -53,13 +66,13 @@ INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src
 		INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\debug\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-27:12
+		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-35:12
 		INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\debug\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\debug\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-27:12
+		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:1-35:12
 		INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:1:11-69
@@ -70,11 +83,13 @@ MERGED from [com.facebook.flipper:flipper:0.33.1] C:\Users\abdallah mefire\.grad
 	android:name
 		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:6:5-25:19
-MERGED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:6:5-25:19
-MERGED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:6:5-25:19
+ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:6:5-33:19
+MERGED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:6:5-33:19
+MERGED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:6:5-33:19
 MERGED from [com.facebook.react:react-native:0.62.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\97788fffb7ffef8df69f2c55e7811bc8\jetified-react-native-0.62.1\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.react:react-native:0.62.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\97788fffb7ffef8df69f2c55e7811bc8\jetified-react-native-0.62.1\AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\1c82f948fbe49c677ead6ef920fb3084\material-1.1.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\1c82f948fbe49c677ead6ef920fb3084\material-1.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\35e22cd826274df1ea80004b3584bc82\soloader-0.8.2\AndroidManifest.xml:11:5-20
 MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\35e22cd826274df1ea80004b3584bc82\soloader-0.8.2\AndroidManifest.xml:11:5-20
 MERGED from [androidx.core:core:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\db66a303bf26c4c9c9ee589a595c808c\core-1.1.0\AndroidManifest.xml:24:5-89
@@ -110,7 +125,7 @@ MERGED from [com.facebook.soloader:annotation:0.8.2] C:\Users\abdallah mefire\.g
 		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:7:7-38
 		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:7:7-38
 activity#com.poosahremittances.MainActivity
-ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:13:7-23:18
+ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:13:7-31:18
 	android:label
 		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:15:9-41
 	android:launchMode
@@ -131,10 +146,28 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:21:13-73
 	android:name
 		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:21:23-70
-activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:24:7-84
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:mychat
+ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:24:9-29:18
+action#android.intent.action.VIEW
+ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:25:2-54
 	android:name
-		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:24:17-81
+		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:25:10-51
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:26:2-61
+	android:name
+		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:26:12-58
+category#android.intent.category.BROWSABLE
+ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:27:2-63
+	android:name
+		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:27:12-60
+data
+ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:28:2-34
+	android:scheme
+		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:28:8-31
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:32:7-84
+	android:name
+		ADDED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:32:17-81
 uses-sdk
 INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml
@@ -145,12 +178,28 @@ MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] C:\Users\abdall
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.33.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\7aaecf1ba100fc2b5c7bd873fc97ca8e\flipper-network-plugin-0.33.1\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\3d2e5e760b7631955e5e3deac6cfac47\flipper-fresco-plugin-0.33.1\AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.33.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\3d2e5e760b7631955e5e3deac6cfac47\flipper-fresco-plugin-0.33.1\AndroidManifest.xml:11:5-13:41
+MERGED from [:react-native-community_masked-view] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-community_masked-view] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-appearance] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-appearance\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-appearance] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-appearance\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-safe-area-context] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] C:\Users\abdallah mefire\my-apps\posah-remittances\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.62.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\97788fffb7ffef8df69f2c55e7811bc8\jetified-react-native-0.62.1\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.react:react-native:0.62.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\97788fffb7ffef8df69f2c55e7811bc8\jetified-react-native-0.62.1\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\974022682544d6825d45fc692800328f\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\974022682544d6825d45fc692800328f\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\afc777f70584d440cacffbd98abbb7c0\swiperefreshlayout-1.1.0-alpha02\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0-alpha02] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\afc777f70584d440cacffbd98abbb7c0\swiperefreshlayout-1.1.0-alpha02\AndroidManifest.xml:20:5-22:41
 MERGED from [org.webkit:android-jsc:r245459] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\3b40a75f80595941c9d281e83930d2fb\android-jsc-r245459\AndroidManifest.xml:7:5-9:41
 MERGED from [org.webkit:android-jsc:r245459] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\3b40a75f80595941c9d281e83930d2fb\android-jsc-r245459\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\1c82f948fbe49c677ead6ef920fb3084\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\1c82f948fbe49c677ead6ef920fb3084\material-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\680f99f5a60980a4fb7a012e32eff12d\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\680f99f5a60980a4fb7a012e32eff12d\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.facebook.fresco:flipper:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\237856cd59d663eef0d2dde410bdbc5b\flipper-2.0.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:flipper:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\237856cd59d663eef0d2dde410bdbc5b\flipper-2.0.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:stetho:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\f251691ba9209f420bb577eb9d91f704\stetho-2.0.0\AndroidManifest.xml:5:5-7:41
@@ -171,46 +220,56 @@ MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] C:\Users\abdallah mef
 MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\7d2a635a5ad58f78dca53ad99b0cecce\imagepipeline-base-2.0.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\35e22cd826274df1ea80004b3584bc82\soloader-0.8.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:soloader:0.8.2] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\35e22cd826274df1ea80004b3584bc82\soloader-0.8.2\AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\680f99f5a60980a4fb7a012e32eff12d\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\680f99f5a60980a4fb7a012e32eff12d\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\9f3d1a960b445437804b23cee56e2af7\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\9f3d1a960b445437804b23cee56e2af7\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\140d1cf8081e8f704ec3cba757afa02b\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\140d1cf8081e8f704ec3cba757afa02b\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\0fa3398820e39b4e96b0722adbff64ea\interpolator-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\0fa3398820e39b4e96b0722adbff64ea\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\e3f2b2737899525f005212ed63d1af29\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\e3f2b2737899525f005212ed63d1af29\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\8910766ad2d8870f961ea198929f0467\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\8910766ad2d8870f961ea198929f0467\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\fcb85ee42de2afcd82ed2f0c66ca9c3e\fragment-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.1] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\fcb85ee42de2afcd82ed2f0c66ca9c3e\fragment-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\b68ac1c6834c7293fa503cde61f3d185\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\b68ac1c6834c7293fa503cde61f3d185\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\47be07513a5bc77e813f0e807c366872\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\47be07513a5bc77e813f0e807c366872\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\5fd1d1c4c0c205d485aea7bdb9f0c38d\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\5fd1d1c4c0c205d485aea7bdb9f0c38d\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\62c0ec8f353403f8a78abf5ef29a4384\loader-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\62c0ec8f353403f8a78abf5ef29a4384\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\3bc3a76bc625d667ab1c7c423093d2c1\activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\3bc3a76bc625d667ab1c7c423093d2c1\activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\6098b25f5dcba865e8ac7d5b02e0e623\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\6098b25f5dcba865e8ac7d5b02e0e623\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\c7051471f87a4f7960cfec345d8c5896\activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\c7051471f87a4f7960cfec345d8c5896\activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\18cfa758d0ddfb6bb1eb68cb563544aa\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\18cfa758d0ddfb6bb1eb68cb563544aa\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\b686c239e656ccad1bce0dbfa1ccdb0e\customview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\b686c239e656ccad1bce0dbfa1ccdb0e\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\a04beb4072abc0f79439acef2c7616da\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\a04beb4072abc0f79439acef2c7616da\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\6098b25f5dcba865e8ac7d5b02e0e623\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\6098b25f5dcba865e8ac7d5b02e0e623\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\db66a303bf26c4c9c9ee589a595c808c\core-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\db66a303bf26c4c9c9ee589a595c808c\core-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\ec2e9fa399b643ad2c02091627fa321c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\ec2e9fa399b643ad2c02091627fa321c\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\d80c15330754c937ffd2195e28843ab7\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\d80c15330754c937ffd2195e28843ab7\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\78cd99b1b188d221044f5fbf54ba9ec2\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\78cd99b1b188d221044f5fbf54ba9ec2\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\242120d8bfd93333367333bf1d73ac36\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\242120d8bfd93333367333bf1d73ac36\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\8f17d7fa49fa95f7527732581685c3eb\lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\8f17d7fa49fa95f7527732581685c3eb\lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\09f2dfbdbc6e9ffd5cb4c0b6e68943d7\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\09f2dfbdbc6e9ffd5cb4c0b6e68943d7\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\ee14be87c7685c9b9745ba4d0c3bb979\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\ee14be87c7685c9b9745ba4d0c3bb979\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\09feddfd1746d178f13a0d989b25cbf6\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\09feddfd1746d178f13a0d989b25cbf6\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\1d0d8430a6c13d4b9abb12fe1f0c03ad\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\1d0d8430a6c13d4b9abb12fe1f0c03ad\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\7d0f1e205b03b1a12b36f028fa8fd906\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\7d0f1e205b03b1a12b36f028fa8fd906\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\9c11bb5a5497cfd65ca5715586b6a836\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\9c11bb5a5497cfd65ca5715586b6a836\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\62315b49a9cdb40c139c806a21028408\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\62315b49a9cdb40c139c806a21028408\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\59fe9ff64b55925919001b6a4eabe497\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\59fe9ff64b55925919001b6a4eabe497\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\a862f75b2afa492d35a589908f1d912d\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\a862f75b2afa492d35a589908f1d912d\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [com.facebook.soloader:annotation:0.8.2] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\011c9306f6d11474b3fd8d1f39103486\annotation-0.8.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.soloader:annotation:0.8.2] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\011c9306f6d11474b3fd8d1f39103486\annotation-0.8.2\AndroidManifest.xml:7:5-9:41
 MERGED from [com.facebook.fresco:fbcore:2.0.0] C:\Users\abdallah mefire\.gradle\caches\transforms-2\files-2.1\63ec105cdd87e39db716b5324a2e1396\jetified-fbcore-2.0.0\AndroidManifest.xml:5:5-7:41
