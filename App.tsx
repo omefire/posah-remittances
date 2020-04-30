@@ -40,7 +40,7 @@ const App = () => {
       onPress={Keyboard.dismiss}
     >
       <View style={styless.all}>
-        <SignUp />
+        <WelcomeScreen />
       </View>
     </TouchableWithoutFeedback>
   );
