@@ -57,7 +57,7 @@ export default () => (
         passwordConfirmation: "",
       }}
       onSubmit={(values, actions) => {
-        alert(JSON.stringify(values));
+        // alert(JSON.stringify(values));
 
         actions.resetForm();
         setTimeout(() => {
@@ -122,21 +122,16 @@ export default () => (
 
 const styles = StyleSheet.create({
   container: {
-    // paddingTop: 100,
-    //  marginBottom: 20,
     paddingBottom: 60,
     flex: 1,
     justifyContent: "center",
     direction: "inherit",
-
-    //marginLeft: 10,
   },
   input: {
     margin: 15,
     height: 40,
     borderColor: "blue",
     borderWidth: 1,
-    //borderColor:'black',
   },
   submitButton: {
     backgroundColor: "#0000FF",
@@ -161,10 +156,5 @@ const styles = StyleSheet.create({
     marginLeft: 100,
     color: "#0000FF",
     marginTop: 10,
-    //   /  marginBottom: 100,
-    //paddingTop: 10,
-  },
-  appTitleView: {
-    flexDirection: "row",
   },
 });

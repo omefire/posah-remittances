@@ -81,7 +81,7 @@ export default () => (
         agreeToTerms: false,
       }}
       onSubmit={(values, actions) => {
-        alert(JSON.stringify(values));
+        // alert(JSON.stringify(values));
 
         actions.resetForm();
         setTimeout(() => {

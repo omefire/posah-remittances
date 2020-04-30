@@ -33,7 +33,6 @@ export default () => (
           marginLeft: 35,
           paddingBottom: 1,
           marginBottom: 10,
-          //marginTop: 100,
         }}
       >
         Please enter your email to receive a password reset link:
@@ -44,7 +43,7 @@ export default () => (
         email: "",
       }}
       onSubmit={(values, actions) => {
-        alert(JSON.stringify(values));
+        //alert(JSON.stringify(values));
 
         actions.resetForm();
         setTimeout(() => {
