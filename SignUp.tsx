@@ -14,10 +14,10 @@ import { Formik } from "formik";
 import * as yup from "yup";
 
 const validationSchema = yup.object({
-  email: yup.string().email().required(),
+  email: yup.string().label("email").email().required(),
 
-  firstName: yup.string().required().min(2),
-  lastName: yup.string().required().min(2),
+  firstName: yup.string().label("First Name").required().min(2),
+  lastName: yup.string().label("Last Name").required().min(2),
 
   password: yup
     .string()
@@ -81,7 +81,7 @@ export default () => (
         agreeToTerms: false,
       }}
       onSubmit={(values, actions) => {
-        alert(JSON.stringify(values));
+        // alert(JSON.stringify(values));
 
         actions.resetForm();
         setTimeout(() => {
