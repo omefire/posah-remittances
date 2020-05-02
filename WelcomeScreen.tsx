@@ -1,41 +1,44 @@
-import React, { Component } from "react";
-import { Container, Button, Text, View } from "native-base";
+import React from "react";
+import { Button, Text, View, Container, Content } from "native-base";
+import { NativeRouter, Route, Link } from "react-router-native";
 
-import { StyleSheet } from "react-native";
 
-interface Props {}
+import { StyleSheet, TouchableHighlight, Alert } from "react-native";
+import SignUp from "./SignUp";
+
+interface Props {
+  navigation: any;
+}
 
 export default (props: Props) => {
+  const { navigation } = props;
   return (
-    <View style={styles.all}>
-      <View style={styles.container}>
-        <View style={styles.emptyHeader}></View>
-        <View style={styles.body}>
-          <View>
-            <View style={styles.appTitleView}>
-              <Text style={styles.appTitleLarge}>POSAH |</Text>
-              <Text style={styles.appTitleSmall}>Remittance</Text>
+      <View style={styles.all}>
+        <View style={styles.container}>
+          <View style={styles.emptyHeader}></View>
+          <View style={styles.body}>
+            <View>
+              <View style={styles.appTitleView}>
+                <Text style={styles.appTitleLarge}>POSAH |</Text>
+                <Text style={styles.appTitleSmall}>Remittance</Text>
+              </View>
+            </View>
+            <View>
+              <Text style={styles.appDetail}>Send money to Cameroon.</Text>
+              <Text style={styles.appDetail2}>Send to Mobile Money.</Text>
+              <Text style={styles.appDetail2}>Fast. Cheap.</Text>
             </View>
           </View>
-          <View>
-            <Text style={styles.appDetail}>Send money to Cameroon.</Text>
-            <Text style={styles.appDetail2}>Send to Mobile Money.</Text>
-            <Text style={styles.appDetail2}>Fast. Cheap.</Text>
+          <View style={styles.footer}>
+            <Button primary bordered style={{ flexDirection: "column", justifyContent: "center",  backgroundColor: "blue"}} onPress={() => navigation.navigate("Register")}>
+              <Text style={{ color: "white"}}>Get started</Text>
+            </Button>
+            <Button transparent style={{ flexDirection: "column", justifyContent: "center", marginTop: 15 }}>
+              <Text style={{ color: "blue"}}>Sign In</Text>
+            </Button>
           </View>
         </View>
-        <View style={styles.footer}>
-          <View style={{ marginLeft: 150 }}></View>
-          <Button transparent>
-            <Text style={{ fontWeight: "bold", color: "blue" }}>
-              Get started
-            </Text>
-          </Button>
-          <Button primary rounded bordered style={{ backgroundColor: "white" }}>
-            <Text style={{ fontWeight: "bold", color: "blue" }}>Sign in</Text>
-          </Button>
-        </View>
       </View>
-    </View>
   );
 };
 
@@ -50,16 +53,19 @@ const styles = StyleSheet.create({
     marginLeft: 30,
   },
   emptyHeader: {
-    flex: 1,
+    flex: 2,
   },
   body: {
-    flex: 1,
+    flex: 5,
   },
   footer: {
     flex: 1,
-    flexDirection: "row",
-    alignItems: "flex-end",
+    flexDirection: "column",
+    justifyContent: "center",
     marginBottom: 80,
+    //backgroundColor: "yellow",
+    marginRight: 30,
+    height: 10
   },
   appTitleLarge: {
     fontSize: 30,
