@@ -2,3 +2,5 @@ node_modules
 android/app/build
 android/.idea
 android/.gradle
+android/.settings
+android/app/.settings
