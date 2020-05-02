@@ -26,7 +26,7 @@ export default (props: Props) => {
         <View style={styles.footer}>
           <View style={{ marginLeft: 150 }}></View>
           <Button transparent>
-            <Text style={{ fontWeight: "bold", color: "white" }}>
+            <Text style={{ fontWeight: "bold", color: "blue" }}>
               Get started
             </Text>
           </Button>
@@ -42,7 +42,7 @@ export default (props: Props) => {
 const styles = StyleSheet.create({
   all: {
     flex: 1,
-    backgroundColor: "rgb(22, 82, 240)",
+    backgroundColor: "white",
   },
   container: {
     flex: 1,
@@ -65,25 +65,25 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontFamily: "Legal Std Bold",
     fontWeight: "bold",
-    color: "white",
+    color: "blue",
   },
   appTitleSmall: {
     fontSize: 30,
     fontFamily: "Legal Std Bold",
     marginLeft: 10,
-    color: "white",
+    color: "blue",
   },
   appDetail: {
     fontSize: 23,
     fontFamily: "Legal Std Bold",
     marginTop: 30,
-    color: "white",
+    color: "blue",
   },
   appDetail2: {
     fontSize: 23,
     fontFamily: "Legal Std Bold",
     marginTop: 10,
-    color: "white",
+    color: "blue",
   },
   appTitleView: {
     flexDirection: "row",
