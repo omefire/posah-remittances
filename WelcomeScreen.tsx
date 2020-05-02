@@ -30,7 +30,7 @@ export default (props: Props) => {
               Get started
             </Text>
           </Button>
-          <Button primary rounded style={{ backgroundColor: "white" }}>
+          <Button primary rounded bordered style={{ backgroundColor: "white" }}>
             <Text style={{ fontWeight: "bold", color: "blue" }}>Sign in</Text>
           </Button>
         </View>
