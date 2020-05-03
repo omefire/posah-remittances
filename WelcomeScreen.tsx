@@ -1,8 +1,6 @@
 import React from "react";
 import { Button, Text, View, Container, Content } from "native-base";
 import { NativeRouter, Route, Link } from "react-router-native";
-
-
 import { StyleSheet, TouchableHighlight, Alert } from "react-native";
 import SignUp from "./SignUp";
 
