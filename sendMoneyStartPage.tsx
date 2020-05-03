@@ -66,7 +66,14 @@ class Inputs extends Component {
                              
                 </View>
                 <View>
-                             <Text style={styles.appTitleSmall}>Login</Text>
+                    <Text style={styles.appTitleSmall}>A simple and cheap way to send money back home.</Text>
+                          
+                </View>  
+                <View  >
+                    <Text style={styles.appTitleLarge}></Text>                             
+                </View>
+                <View>
+                             <Text style={styles.appTitleSmall}></Text>
                              
                 </View>             
              
@@ -87,36 +94,8 @@ class Inputs extends Component {
     >
       {(formikProps) => (
         <React.Fragment>
-          
-
-          
-          <TextInput style = {styles.input}
-                underlineColorAndroid = "transparent"
-                placeholder = "Email"
-                placeholderTextColor = "#0000FF"
-                autoCapitalize = "none"                
-                onChangeText={formikProps.handleChange("email")}
-                onBlur={formikProps.handleBlur("email")}
-                                
-                />
-             <Text style={{ color: "red", paddingLeft: 15 }}>
-              {formikProps.touched.email && formikProps.errors.email}
-            </Text>
-          
-
-         
-          <TextInput style = {styles.input}
-                underlineColorAndroid = "transparent"
-                placeholder = "Password"
-                placeholderTextColor="#0000FF"
-                autoCapitalize="none"
-                onChangeText={formikProps.handleChange("password")}
-              onBlur={formikProps.handleBlur("password")}
-              secureTextEntry/>
-            <Text style={{ color: "red", paddingLeft: 15 }}>
-              {formikProps.touched.password && formikProps.errors.password}
-            </Text>
-                            
+                                    
+                                    
           {formikProps.isSubmitting ? (
             <ActivityIndicator />
           ) : (
@@ -128,7 +107,7 @@ class Inputs extends Component {
                 onPress = {
                     formikProps.handleSubmit
                 }>
-                <Text style = {styles.submitButtonText}> Submit </Text>
+                <Text style = {styles.submitButtonText}> Send Money </Text>
              </TouchableOpacity>              
             </View>
           )}
@@ -172,7 +151,7 @@ class Inputs extends Component {
                 color: '#0000FF'
             },
             appTitleSmall: {
-                fontSize: 30,
+                fontSize: 20,
                 fontFamily: 'Legal Std Bold',
                 marginLeft: 10,
                 color: '#0000FF'

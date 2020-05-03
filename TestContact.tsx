@@ -1,47 +1,20 @@
 import React, { Component } from 'react';
 import { Container, Button, Text, View } from 'native-base';
 //import { Col, Row, Grid } from "react-native-easy-grid";
-import { StyleSheet,TextInput,TouchableOpacity,SafeAreaView,ActivityIndicator,Switch } from 'react-native';
+import { StyleSheet,TextInput,TouchableOpacity,SafeAreaView,ActivityIndicator,Switch,PermissionsAndroid, Platform, Alert } from 'react-native';
 import { Formik } from "formik";
 import * as yup from "yup";
-
-const validationSchema = yup.object({
-    email: yup.string().email().required(),
-      password: yup
-      .string()
-      .label("Password")
-      .required()
-      .min(2, "Seems a bit short...")
-      .max(15, " try a shorter password..."),
-  
-    // createdOn: yup.date().default(function() {
-    //   return new Date();
-    // }),
-  });
-  const StyledSwitch = ({ formikKey, formikProps, label, ...rest }) => (
-    <View style={{ marginHorizontal: 20 }}>
-      <Text style={{ marginBottom: 3 }}>{label}</Text>
-      <Switch
-        style={{ marginRight: 330 }}
-        value={formikProps.values[formikKey]}
-        onValueChange={(value) => {
-          formikProps.setFieldValue(formikKey, value);
-        }}
-        {...rest}
-      />
-      <Text style={{ color: "red" }}>
-        {formikProps.touched[formikKey] && formikProps.errors[formikKey]}
-      </Text>
-    </View>
-  );
-  
+//import Contacts from 'react-native-contacts';
+//import ContactsPicker from 'react-native-contacts-chooser';
+import Contacts from 'react-native-unified-contacts';
 
 
 
 class Inputs extends Component {
     state = {
        email: '',
-       password: ''
+       password: '',
+       phone: ''
     }
     handleEmail = (text) => {
        this.setState({ email: text })
@@ -52,11 +25,25 @@ class Inputs extends Component {
     login = (email, pass) => {
        alert('email: ' + email + ' password: ' + pass)
     }
+    handlePhone = (text) => {
+        this.setState({ phone: text })
+     }
+    readContact=()=>{
+        Contacts.selectContact( (error, contact) =>  {
+            if (error) {
+              console.error(error);
+            }
+            else {
+                this.handlePhone(contact['phoneNumbers'][0]['stringValue']);
+              //console.log(contact['phoneNumbers'][0]['stringValue']);
+            }
+          });
+    }
     render() {
        return (
 
                
-          <SafeAreaView style = {styles.container}>
+          <View style = {styles.container}>
                  <View  >
                              <Text style={styles.appTitleLarge}>POSAH |Remittance</Text>
                              
@@ -65,77 +52,42 @@ class Inputs extends Component {
                 <Text style={styles.appTitleLarge}></Text>
                              
                 </View>
-                <View>
-                             <Text style={styles.appTitleSmall}>Login</Text>
+                <View  >
+                             <Text style={styles.appTitleSmall}>Choose contact</Text>
                              
-                </View>             
-             
-             <Formik
-      initialValues={{
-        email: "",
-        password: ""
-      }}
-      onSubmit={(values, actions) => {
-        alert(JSON.stringify(values));
-
-        actions.resetForm();
-        setTimeout(() => {
-          actions.setSubmitting(false);
-        }, 1000);
-      }}
-      validationSchema={validationSchema}
-    >
-      {(formikProps) => (
-        <React.Fragment>
-          
-
-          
-          <TextInput style = {styles.input}
-                underlineColorAndroid = "transparent"
-                placeholder = "Email"
-                placeholderTextColor = "#0000FF"
-                autoCapitalize = "none"                
-                onChangeText={formikProps.handleChange("email")}
-                onBlur={formikProps.handleBlur("email")}
-                                
-                />
-             <Text style={{ color: "red", paddingLeft: 15 }}>
-              {formikProps.touched.email && formikProps.errors.email}
-            </Text>
-          
-
-         
-          <TextInput style = {styles.input}
-                underlineColorAndroid = "transparent"
-                placeholder = "Password"
-                placeholderTextColor="#0000FF"
-                autoCapitalize="none"
-                onChangeText={formikProps.handleChange("password")}
-              onBlur={formikProps.handleBlur("password")}
-              secureTextEntry/>
-            <Text style={{ color: "red", paddingLeft: 15 }}>
-              {formikProps.touched.password && formikProps.errors.password}
-            </Text>
-                            
-          {formikProps.isSubmitting ? (
-            <ActivityIndicator />
-          ) : (
-
+                </View>
             
-            <View >
-                <TouchableOpacity
+             <TextInput style = {styles.input}
+                
+                underlineColorAndroid = "transparent"
+                placeholder = "Phone number"
+                placeholderTextColor = "#9a73ef"
+                autoCapitalize = "none"
+                value={this.state.phone}
+                />
+             <TextInput style = {styles.input}
+                
+                underlineColorAndroid = "transparent"
+                placeholder = "Amount in FCFA"
+                placeholderTextColor = "#9a73ef"
+                autoCapitalize = "none"
+               
+                />
+             
+             
+             <TouchableOpacity
                 style = {styles.submitButton}
                 onPress = {
-                    formikProps.handleSubmit
+                   () => this.readContact()
                 }>
-                <Text style = {styles.submitButtonText}> Submit </Text>
-             </TouchableOpacity>              
-            </View>
-          )}
-        </React.Fragment>
-      )}
-    </Formik>
-          </SafeAreaView>
+                <Text style = {styles.submitButtonText}> Add Contact </Text>
+             </TouchableOpacity>
+             <TouchableOpacity
+                style = {styles.submitButton}
+                >
+                <Text style = {styles.submitButtonText}> Send </Text>
+             </TouchableOpacity>
+          </View>
        )
     }
  }
@@ -156,14 +108,9 @@ class Inputs extends Component {
        padding: 10,
        margin: 15,
        height: 40,
-       
     },
     submitButtonText:{
-        position: 'absolute',
-       color: 'white',
-       left: 155,
-       top: 15
-       
+       color: 'white'
     },
     appTitleLarge: {
                 fontSize: 30,

@@ -26,14 +26,15 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-import WelcomeScreen from './WelcomeScreen';
-
+//import WelcomeScreen from './WelcomeScreen';
+//import SendMoneyStartPage from './SendMoneyStartPage';
+import TestContact from './ChooseContactScreen';
 declare var global: {HermesInternal: null | {}};
 
 const App = () => {
   return (
     <>
-      <WelcomeScreen />
+      <TestContact />
     </>
   );
 };
