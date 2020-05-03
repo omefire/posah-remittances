@@ -1,0 +1,274 @@
+import * as React from "react";
+import { Component } from "react";
+import * as yup from "yup";
+//import { Button } from "react-native";
+import { TextInput, View, Alert } from "react-native";
+import { Button, Text } from "native-base";
+import { Formik } from "formik";
+import { StyleSheet } from "react-native";
+
+const UserSchemaValidation = yup.object({
+  email: yup.string().email().required(),
+
+  firstName: yup.string().required().min(2),
+  lastName: yup.string().required().min(2),
+
+  password: yup
+    .string()
+    .label("Password")
+    .required()
+    .min(2, "Seems a bit short...")
+    .max(10, "We prefer insecure system, try a shorter password."),
+  passwordConfirmation: yup
+    .string()
+    .required()
+    .label("Confirm password")
+    .test("passwords-match", "Passwords must match ya fool", function (value) {
+      return this.parent.password === value;
+    }),
+
+  // createdOn: yup.date().default(function() {
+  //   return new Date();
+  // }),
+});
+
+// Render Prop
+//import React from 'react';
+// Formik x React Native example
+//import React from 'react';
+
+//import * as yup from "yup";
+interface Props {}
+const handleSubmit = () => {
+  //console.log("hi");
+};
+
+export default (props: Props) => {
+  return (
+    <View style={styles.container}>
+      <Formik
+        initialValues={{
+          email: "",
+          firstName: "",
+          lastName: "",
+          password: "",
+          passwordConfirmation: "",
+        }}
+        validationSchema={UserSchemaValidation}
+        onSubmit={(values, actions) => {
+          console.log(values);
+          actions.resetForm();
+        }}
+      >
+        {({ handleChange, handleBlur, handleSubmit, values }) => (
+          <View>
+            <View>
+              <TextInput
+                onChangeText={handleChange("email")}
+                onBlur={handleBlur("email")}
+                value={values.email}
+                style={
+                  styles.input
+                  // //fon
+                  // color: "white",
+                  // backgroundColor: "black",
+                  // width: "50%",
+                  // alignItems: "center",
+                  // alignContent: "center",
+                  // justifyContent: "center",
+
+                  // marginLeft: 80,
+                  // marginBottom: 20,
+                  // marginTop: 20,
+                }
+              />
+              <Text
+                style={{ paddingLeft: 5, fontStyle: "italic", fontSize: 15 }}
+              >
+                EMAIL
+              </Text>
+            </View>
+            <View>
+              <TextInput
+                onChangeText={handleChange("firstName")}
+                onBlur={handleBlur("firstName")}
+                value={values.firstName}
+                style={
+                  styles.input
+                  // //fon
+                  // color: "white",
+                  // backgroundColor: "black",
+                  // width: "50%",
+                  // alignItems: "center",
+                  // alignContent: "center",
+                  // justifyContent: "center",
+
+                  // marginLeft: 80,
+                  // marginBottom: 20,
+                  // marginTop: 20,
+                }
+              />
+              <Text
+                style={{ paddingLeft: 5, fontStyle: "italic", fontSize: 15 }}
+              >
+                FIRST NAME
+              </Text>
+            </View>
+
+            <View>
+              <TextInput
+                onChangeText={handleChange("lastName")}
+                onBlur={handleBlur("lastName")}
+                value={values.lastName}
+                style={
+                  styles.input
+                  // //fon
+                  // color: "white",
+                  // backgroundColor: "black",
+                  // width: "50%",
+                  // alignItems: "center",
+                  // alignContent: "center",
+                  // justifyContent: "center",
+
+                  // marginLeft: 80,
+                  // marginBottom: 20,
+                  // marginTop: 20,
+                }
+              />
+              <Text
+                style={{ paddingLeft: 5, fontStyle: "italic", fontSize: 15 }}
+              >
+                LAST NAME
+              </Text>
+            </View>
+
+            <View>
+              <TextInput
+                onChangeText={handleChange("password")}
+                onBlur={handleBlur("password")}
+                value={values.password}
+                style={styles.input}
+              />
+              <Text
+                style={{ paddingLeft: 5, fontStyle: "italic", fontSize: 15 }}
+              >
+                PASSWORD
+              </Text>
+            </View>
+
+            <View>
+              <TextInput
+                onChangeText={handleChange("passwordConfirmation")}
+                onBlur={handleBlur("passwordConfirmation")}
+                value={values.passwordConfirmation}
+                style={styles.input}
+              />
+              <Text
+                style={{ paddingLeft: 5, fontStyle: "italic", fontSize: 15 }}
+              >
+                CONFIRM YOUR PASSWORD
+              </Text>
+            </View>
+
+            <Button
+              primary
+              rounded
+              style={{
+                backgroundColor: "blue",
+                width: "50%",
+                alignContent: "stretch",
+                justifyContent: "flex-end",
+                margin: 10,
+                marginTop: 10,
+              }}
+              onPress={handleSubmit}
+            >
+              <Text
+                style={{
+                  color: "white",
+                  justifyContent: "center",
+                  alignContent: "center",
+                  //paddingLeft: 1,
+                  paddingRight: 65,
+                  //marginLeft: 10,
+                }}
+              >
+                Sign Up
+              </Text>
+            </Button>
+          </View>
+        )}
+      </Formik>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  all: {
+    flex: 1,
+    backgroundColor: "rgb(22, 82, 240)",
+  },
+  container: {
+    flex: 1,
+    marginTop: 30,
+    flexDirection: "column",
+    marginBottom: 170,
+    marginLeft: 10,
+    marginRight: 10,
+    //paddingRight: 15,
+    paddingLeft: 10,
+    backgroundColor: "lightblue",
+
+    //height: 300,
+    // paddingBottom: 300,
+  },
+  emptyHeader: {
+    flex: 1,
+  },
+  body: {
+    flex: 1,
+  },
+  footer: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "flex-end",
+    marginBottom: 80,
+  },
+  appTitleLarge: {
+    fontSize: 30,
+    fontFamily: "Legal Std Bold",
+    fontWeight: "bold",
+    color: "white",
+  },
+  appTitleSmall: {
+    fontSize: 30,
+    fontFamily: "Legal Std Bold",
+    marginLeft: 10,
+    color: "white",
+  },
+  appDetail: {
+    fontSize: 23,
+    fontFamily: "Legal Std Bold",
+    marginTop: 30,
+    color: "white",
+  },
+  appDetail2: {
+    fontSize: 23,
+    fontFamily: "Legal Std Bold",
+    marginTop: 10,
+    color: "white",
+  },
+  appTitleView: {
+    flexDirection: "row",
+  },
+
+  input: {
+    marginTop: 18,
+    borderWidth: 2,
+    borderColor: "blue",
+    padding: 10,
+    fontSize: 18,
+    borderRadius: 10,
+    width: 300,
+  },
+});
