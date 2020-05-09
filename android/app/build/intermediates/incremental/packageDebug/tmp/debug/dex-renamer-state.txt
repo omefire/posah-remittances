@@ -1,4 +1,4 @@
-#Sun Apr 19 08:28:27 PDT 2020
-base.0=/Users/omefire/Projects/posah/posah-remittances/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
-path.0=classes.dex
+#Tue Apr 28 01:16:23 BDT 2020
+base.0=C\:\\Users\\abdallah mefire\\my-apps\\posah-remittances\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 renamed.0=classes.dex
+path.0=classes.dex
