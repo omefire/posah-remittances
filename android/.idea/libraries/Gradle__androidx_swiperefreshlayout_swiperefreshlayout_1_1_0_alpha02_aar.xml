@@ -8,6 +8,8 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/afc777f70584d440cacffbd98abbb7c0/swiperefreshlayout-1.1.0-alpha02/res" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.swiperefreshlayout/swiperefreshlayout/1.1.0-alpha02/ad4c6ba3c121bc15e34fcf3bf6d7d3b5abbfd78e/swiperefreshlayout-1.1.0-alpha02-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
