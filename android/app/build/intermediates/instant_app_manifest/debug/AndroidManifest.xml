@@ -52,8 +52,8 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="people"
-                    android:scheme="peopleapp" />
+                    android:host="resetpassword"
+                    android:scheme="posah" />
  // A
             </intent-filter>
         </activity>
