@@ -11,7 +11,12 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
-
+// react-native-contacts
+import com.rt2zz.reactnativecontacts.ReactNativeContacts;
+// react-native-contacts-chooser
+import com.bluebamboostudios.RNContactsPickerPackage;
+// react-native-unified-contacts
+import com.joshuapinter.RNUnifiedContacts.RNUnifiedContactsPackage;
 
 public class PackageList {
   private Application application;
@@ -56,7 +61,10 @@ public class PackageList {
 
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
-      new MainReactPackage(mConfig)
+      new MainReactPackage(mConfig),
+      new ReactNativeContacts(),
+      new RNContactsPickerPackage(),
+      new RNUnifiedContactsPackage()
     ));
   }
 }
