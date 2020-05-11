@@ -1,4 +1,6 @@
 node_modules
+Android_backup
+ios
 # OSX
 #
 .DS_Store
