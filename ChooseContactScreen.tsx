@@ -79,6 +79,7 @@ class Inputs extends Component {
                 placeholderTextColor = "#9a73ef"
                 autoCapitalize = "none"
                 value={this.state.phone}
+                
                 />
             
              
@@ -88,6 +89,7 @@ class Inputs extends Component {
                 placeholder = "Amount in FCFA"
                 placeholderTextColor = "#9a73ef"
                 autoCapitalize = "none"
+                
                
                 />
              

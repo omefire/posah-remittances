@@ -28,7 +28,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 //import WelcomeScreen from './WelcomeScreen';
 //import SendMoneyStartPage from './SendMoneyStartPage';
-import TestContact from './ChooseContactScreen';
+import TestContact from './addAmountScreen';
 declare var global: {HermesInternal: null | {}};
 
 const App = () => {

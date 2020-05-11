@@ -1,7 +1,7 @@
 import React, { Fragment,Component } from 'react';
 import { Container, Button, Text, View } from 'native-base';
 //import { Col, Row, Grid } from "react-native-easy-grid";
-import { StyleSheet,TextInput,TouchableOpacity,SafeAreaView,Switch,PermissionsAndroid, Platform, Alert,FlatList,ActivityIndicator } from 'react-native';
+import { Image ,StyleSheet,TextInput,TouchableOpacity,SafeAreaView,Switch,PermissionsAndroid, Platform, Alert,FlatList,ActivityIndicator } from 'react-native';
 import { Formik } from "formik";
 import * as yup from "yup";
 //import Contacts from 'react-native-contacts';
@@ -10,6 +10,7 @@ import Contacts from 'react-native-unified-contacts';
 import SearchableDropdown from 'react-native-searchable-dropdown';
 import Select from 'react-select';
 import Contacts1 from 'react-native-contacts';
+import VirtualKeyboard from 'react-native-virtual-keyboard';
 
 const DATA = [
    {
@@ -106,36 +107,9 @@ class Inputs extends Component {
        password: '',
        phone: '',
        name: '',
+       text: '',
        isLoading: true,
-       myContacts:[],
-       FlatListItems: [
-         { id: '1', value: 'A' },
-         { id: '2', value: 'B' },
-         { id: '3', value: 'C' },
-         { id: '4', value: 'D' },
-         { id: '5', value: 'E' },
-         { id: '6', value: 'F' },
-         { id: '7', value: 'G' },
-         { id: '8', value: 'H' },
-         { id: '9', value: 'I' },
-         { id: '10', value: 'J' },
-         { id: '11', value: 'K' },
-         { id: '12', value: 'L' },
-         { id: '13', value: 'M' },
-         { id: '14', value: 'N' },
-         { id: '15', value: 'O' },
-         { id: '16', value: 'P' },
-         { id: '17', value: 'Q' },
-         { id: '18', value: 'R' },
-         { id: '19', value: 'S' },
-         { id: '20', value: 'T' },
-         { id: '21', value: 'U' },
-         { id: '22', value: 'V' },
-         { id: '23', value: 'W' },
-         { id: '24', value: 'X' },
-         { id: '25', value: 'Y' },
-         { id: '26', value: 'Z' },
-       ]
+       myContacts:[]
     }
     FlatListItemSeparator = () => {
       return (
@@ -145,6 +119,11 @@ class Inputs extends Component {
         />
       );
     }
+
+    changeText(newText) {
+		this.setState({text: newText});
+    }
+    
     GetItem(item) {
       //Function for click on an item
       Alert.alert(item);
@@ -221,7 +200,7 @@ class Inputs extends Component {
                              
                 </View>
                 <View  >
-                             <Text style={styles.appTitleSmall}>Choose contact</Text>
+                             {/* <Text style={styles.appTitleSmall}>Add Amount</Text> */}
                              
                 </View>
       
@@ -234,25 +213,38 @@ class Inputs extends Component {
                              
 </View>
 
-<FlatList
-          data={this.state.myContacts}
-          //data defined in constructor
-          ItemSeparatorComponent={this.FlatListItemSeparator}
-          //Item Separator View
-          renderItem={({ item }) => (
-            // Single Comes here which will be repeatative for the FlatListItems
-            <View>
-              <Text
-                style={styles.item}
-                onPress={this.GetItem.bind(
-                  this,
-                  'Id : ' + item.recordID + ' Value : ' + item.phoneNumbers[0]
-                )}>
-                {item['displayName']}
-              </Text>
-            </View>
-          )}
-        />
+{/* <View style={{flex:1}}>
+				<Text>{this.state.text}</Text>
+				<VirtualKeyboard color='blue' pressMode='string' onPress={(val) => this.changeText(val)} />
+			</View> */}
+            <View  >
+                             <Text style={styles.appTitleSmall}>Sending To:</Text>
+                             
+</View>
+ <View  >
+ <Image
+        style={styles.tinyLogo}
+        source={
+            require('./profile.png')
+        }
+      />
+                             <Text style={styles.appTitleSmall}>Ib Mefire</Text>
+                             
+                </View>
+<View style={styles.container}>  
+
+<TextInput  
+          placeholder="Enter amount"  
+          underlineColorAndroid='transparent'  
+          style={styles.TextInputStyle}  
+          keyboardType={'numeric'}
+
+/>  
+
+</View>  
+
+          
+        
 </View>
 
                 <Formik
@@ -319,5 +311,9 @@ class Inputs extends Component {
             },
             appTitleView: {
                         flexDirection: 'row'
-                    }
+                    },
+                    tinyLogo: {
+                        width: 50,
+                        height: 50,
+                      }
  })

@@ -16,7 +16,10 @@
     "react-native": "0.62.2",
     "react-native-contacts": "^5.2.0",
     "react-native-contacts-chooser": "^1.0.0-alpha.2",
+    "react-native-searchable-dropdown": "^1.1.1",
     "react-native-unified-contacts": "^2.0.0-pre.2",
+    "react-native-virtual-keyboard": "^1.1.0",
+    "react-select": "^2.0.0-beta.7",
     "typescript": "^3.8.3",
     "yup": "^0.28.4"
   },
