@@ -33,69 +33,68 @@
 21-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:8:7-39
 22        android:roundIcon="@mipmap/ic_launcher_round"
 22-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:10:7-52
-23        android:testOnly="true"
-24        android:theme="@style/AppTheme"
-24-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:12:7-38
-25        android:usesCleartextTraffic="true" >
-25-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\debug\AndroidManifest.xml:7:18-53
-26        <activity
-26-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:13:7-40:18
-27            android:name="com.poosahremittances.MainActivity"
-27-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:14:9-37
-28            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-28-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:16:9-86
-29            android:label="@string/app_name"
-29-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:15:9-41
-30            android:launchMode="singleTask"
-30-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:17:9-40
-31            android:windowSoftInputMode="adjustResize" >
-31-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:18:9-51
-32            <intent-filter>
-32-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:19:9-22:25
-33                <action android:name="android.intent.action.MAIN" />
-33-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:20:13-65
-33-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:20:21-62
-34
-35                <category android:name="android.intent.category.LAUNCHER" />
-35-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:21:13-73
-35-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:21:23-70
-36            </intent-filter>
-37
-38            <!--
-39 <intent-filter>
-40 <action android:name="android.intent.action.VIEW" />
-41 <category android:name="android.intent.category.DEFAULT" />
-42 <category android:name="android.intent.category.BROWSABLE" />
-43 <data android:scheme="mychat" />
-44 </intent-filter>
-45            -->
-46
-47            <intent-filter android:label="filter_react_native" >
-47-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:31:2-36:17
-47-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:31:17-52
-48                <action android:name="android.intent.action.VIEW" />
-48-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:32:3-55
-48-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:32:11-52
-49
-50                <category android:name="android.intent.category.DEFAULT" />
-50-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:33:3-62
-50-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:33:13-59
-51                <category android:name="android.intent.category.BROWSABLE" />
-51-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:34:3-64
-51-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:34:13-61
-52
-53                <data
-53-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:35:3-63
-54                    android:host="resetpassword"
-54-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:35:32-60
-55                    android:scheme="posah" />
-55-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:35:9-31
-56 // A
-57            </intent-filter>
-58        </activity>
-59        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-59-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:41:7-84
-59-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:41:17-81
-60    </application>
-61
-62</manifest>
+23        android:theme="@style/AppTheme"
+23-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:12:7-38
+24        android:usesCleartextTraffic="true" >
+24-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\debug\AndroidManifest.xml:7:18-53
+25        <activity
+25-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:13:7-40:18
+26            android:name="com.poosahremittances.MainActivity"
+26-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:14:9-37
+27            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+27-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:16:9-86
+28            android:label="@string/app_name"
+28-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:15:9-41
+29            android:launchMode="singleTask"
+29-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:17:9-40
+30            android:windowSoftInputMode="adjustResize" >
+30-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:18:9-51
+31            <intent-filter>
+31-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:19:9-22:25
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:20:13-65
+32-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:20:21-62
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:21:13-73
+34-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:21:23-70
+35            </intent-filter>
+36
+37            <!--
+38 <intent-filter>
+39 <action android:name="android.intent.action.VIEW" />
+40 <category android:name="android.intent.category.DEFAULT" />
+41 <category android:name="android.intent.category.BROWSABLE" />
+42 <data android:scheme="mychat" />
+43 </intent-filter>
+44            -->
+45
+46            <intent-filter android:label="filter_react_native" >
+46-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:31:2-36:17
+46-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:31:17-52
+47                <action android:name="android.intent.action.VIEW" />
+47-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:32:3-55
+47-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:32:11-52
+48
+49                <category android:name="android.intent.category.DEFAULT" />
+49-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:33:3-62
+49-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:33:13-59
+50                <category android:name="android.intent.category.BROWSABLE" />
+50-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:34:3-64
+50-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:34:13-61
+51
+52                <data
+52-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:35:3-63
+53                    android:host="resetpassword"
+53-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:35:32-60
+54                    android:scheme="posah" />
+54-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:35:9-31
+55 // A
+56            </intent-filter>
+57        </activity>
+58        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+58-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:41:7-84
+58-->C:\Users\abdallah mefire\my-apps\posah-remittances\android\app\src\main\AndroidManifest.xml:41:17-81
+59    </application>
+60
+61</manifest>
