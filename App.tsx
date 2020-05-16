@@ -63,6 +63,8 @@ import SendConfirmationEmail from "./src/screens/SendConfirmationEmail";
 import ResetPassword from "./src/screens/ResetPassword";
 
 import AppContainer from "./src/navigation";
+import ConnectToCoinbase from "./src/screens/ConnectToCoinbase";
+import CoinbaseConnectionSucceeded from "./src/screens/CoinbaseConnectionSucceeded";
 
 //declare var global: { HermesInternal: null | {} };
 
@@ -70,21 +72,6 @@ import AppContainer from "./src/navigation";
 
 const App = () => {
   ////
-  const state = {
-    routes: [
-      {
-        name: "Home",
-        state: {
-          routes: [
-            {
-              name: "WelcomeScreen",
-              params: { id: "jane" },
-            },
-          ],
-        },
-      },
-    ],
-  };
 
   ////
   const colorScheme = useColorScheme();
@@ -113,9 +100,34 @@ const App = () => {
     >
       <Stack.Screen
         name="Home"
-        children={createDrawer}
+        //children={createDrawer}
+        component={WelcomeScreen}
         options={{
           title: "               POSAH | REMITTANCES",
+        }}
+      />
+      <Stack.Screen
+        name="ConnectToCoinbase"
+        //children={createDrawer}
+        component={ConnectToCoinbase}
+        options={{
+          title: "               connect to coinbase",
+        }}
+      />
+      <Stack.Screen
+        name="resetpassword"
+        //children={createDrawer}
+        component={ResetPassword}
+        options={{
+          title: "               Reset Password",
+        }}
+      />
+      <Stack.Screen
+        name="coinbaseconnectionsucceeded"
+        //children={createDrawer}
+        component={CoinbaseConnectionSucceeded}
+        options={{
+          title: "               connection succeeded",
         }}
       />
 
@@ -126,6 +138,7 @@ const App = () => {
           title: "signup Screen",
         }}
       />
+
       {/* <Stack.Screen name="Bottom Tabs" children={this.createBottomTabs} />
   <Stack.Screen name="Top Tabs" children={this.createTopTabs} /> */}
     </Stack.Navigator>
@@ -143,47 +156,6 @@ const App = () => {
     </Drawer.Navigator>
   );
   /// deep link
-  const ref = React.useRef();
-
-  const { getInitialState } = useLinking(ref, {
-    prefixes: ["https://mychat.com", "mychat://"],
-    config: {
-      Home: {
-        screens: {
-          welcome: "users/:id",
-        },
-      },
-    },
-  });
-
-  const [isReady, setIsReady] = React.useState(false);
-  const [initialState, setInitialState] = React.useState();
-
-  React.useEffect(() => {
-    Promise.race([
-      getInitialState(),
-      new Promise((resolve) =>
-        // Timeout in 150ms if `getInitialState` doesn't resolve
-        // Workaround for https://github.com/facebook/react-native/issues/25675
-        setTimeout(resolve, 150)
-      ),
-    ])
-      .catch((e) => {
-        console.error(e);
-      })
-      .then((state) => {
-        Alert.alert(JSON.stringify(state));
-        if (state !== undefined) {
-          ////setInitialState(state);
-        }
-
-        setIsReady(true);
-      });
-  }, [getInitialState]);
-
-  if (!isReady) {
-    return null;
-  }
 
   ///
 
@@ -204,8 +176,6 @@ const App = () => {
       <AppearanceProvider>
         <NavigationContainer
           theme={colorScheme == "dark" ? DarkTheme : MyTheme}
-          initialState={initialState}
-          ref={ref}
         >
           {createHomeStack()}
         </NavigationContainer>
