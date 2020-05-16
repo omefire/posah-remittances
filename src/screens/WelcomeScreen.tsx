@@ -47,16 +47,21 @@ export default (props: Props) => {
 
     if (routeName === "resetpassword") {
       Alert.alert("reset");
-      navigation.navigate("coinbaseconnectionsucceeded", { id, name: "chris" });
-    } else if (routeName === "verification_complete") {
-      Alert.alert("verification");
-      navigation.navigate("coinbaseconnectionsucceeded", { id, name: "chris" });
-    } else if (routeName === "home") {
-      Alert.alert("home");
-      navigation.navigate("Home", { id, name: "chris" });
+      navigation.navigate("resetpassword", { id, name: "chris" });
     } else {
-      navigation.navigate("signup", { id, name: "chris" });
+      Alert.alert("verification");
+      navigation.navigate("coinbaseconnectionsucceeded");
     }
+
+    // else if (routeName === "verification_complete") {
+    //   Alert.alert("verification");
+    //   navigation.navigate("coinbaseconnectionsucceeded", { id, name: "chris" });
+    // } else if (routeName === "home") {
+    //   Alert.alert("home");
+    //   navigation.navigate("Home", { id, name: "chris" });
+    // } else {
+    //   navigation.navigate("signup", { id, name: "chris" });
+    // }
   };
   ////
 
